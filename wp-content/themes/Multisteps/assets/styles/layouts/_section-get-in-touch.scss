@@ -1,0 +1,37 @@
+/**
+ * Section - Get In Touch
+ *
+ */
+
+.single-header {
+    @extend .page-header;
+}
+.single-title {
+    @extend .page-title;
+}
+.single-content {
+    @extend .page-content;
+}
+
+.getintouch {
+    max-width: 45rem; /* 720/16 */
+    margin: auto;
+}
+.getintouch__title {
+    @include media-breakpoint-down(md) {
+        font-size: 1.5rem; /* 24/16 */
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.8125rem; /* 45/16 */
+    }
+}
+.getintouch__copy {
+    @include media-breakpoint-down(md) {
+        font-size: 0.75rem; /* 12/16 */
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+    }
+}

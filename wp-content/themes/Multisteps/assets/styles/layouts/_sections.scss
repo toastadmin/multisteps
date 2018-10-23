@@ -1,0 +1,148 @@
+/**
+ * Sections
+ *
+ */
+
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-image {
+    position: relative;
+    background-color: $brand-gray3;
+
+    @include media-breakpoint-down(md) {
+        min-height: 23.75rem; /* 380/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        min-height: 37.5rem; /* 600/16 */
+    }
+
+    &.with-arrow-down {
+        position: relative;
+        padding-bottom: 3.125rem; /* 50/16 */
+
+        &:before,
+        &:after {
+            content: "";
+            width: 50%;
+            height: 0;
+            border: solid #fff;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            border-top: $brand-white;
+        }
+        &:before {
+            border-left: transparent;
+            border-bottom: 2.625rem solid $brand-white; /* 42/16 */
+            border-right: 1.875rem solid transparent; /* 30/16 */
+        }
+        &:after {
+            right: 0;
+            border-right: transparent;
+            border-bottom: 2.625rem solid $brand-white; /* 42/16 */
+            border-left: 1.875rem solid transparent; /* 30/16 */
+        }
+    }
+}
+.section-image__title {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.section-image__copy {
+    position: relative;
+}
+
+// thank you section
+.section-thankyou {
+    min-height: 80vh;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.4375rem; /* 23/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 3.125rem; /* 50/16 */
+    }
+}
+
+// post carousels
+.post-carousel-item {
+    position: relative;
+    height: 0;
+    background-color: $brand-gray3;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 120%;
+        margin: 1rem;
+    }
+}
+.post-carousel-item__content {
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-center;
+}
+
+.post-carousel-item__title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.75rem; /* 28/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 2.25rem; /* 36/16 */
+    }
+}
+
+// position carousel
+.position-item {
+    position: relative;
+    height: 0;
+    background-color: $brand-dark;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 60%;
+        margin: 1rem;
+    }
+}
+.position-item__content {
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-center;
+}
+.position-item__title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.position-item__position {
+    color: #fff;
+    font-size: 1.625rem; /* 26/16 */
+    text-align: center;
+}

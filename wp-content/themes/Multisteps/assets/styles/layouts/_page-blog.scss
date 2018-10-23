@@ -1,0 +1,134 @@
+/**
+ * Blog
+ *
+ */
+
+// blog nav
+.blog-nav {
+    .nav {
+        @extend .row;
+
+        @include media-breakpoint-down(md) {
+            margin-left: -6px;
+            margin-right: -6px;
+        }
+    }
+    .nav-item {
+        @extend .col;
+
+        @include media-breakpoint-down(md) {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+    .nav-link {
+        color: #fff;
+        text-align: center;
+        background-color: $brand-dark;
+        height: 100%;
+        text-transform: uppercase;
+
+        @extend .d-flex;
+        @extend .align-items-center;
+        @extend .justify-content-center;
+
+        @include media-breakpoint-down(md) {
+            font-size: 0.8125rem; /* 13/16 */
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 1.375rem; /* 22/16 */
+        }
+    }
+}
+
+// entry content
+.entry-content {
+    background-color: $brand-dark;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+
+
+    @include media-breakpoint-down(md) {
+        width: 70%;
+        margin-top: -33%;
+        margin-bottom: 18%;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 51%;
+        margin-top: -33%;
+        margin-bottom: 10%;
+    }
+
+    .entry_alt & {
+        margin-left: auto;
+    }
+}
+.entry-title {
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.25rem; /* 20/16 */
+        margin-bottom: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1.875rem; /* 30/16 */
+        margin-bottom: 2rem;
+    }
+}
+.entry-summary {
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.9375rem; /* 15/16 */
+        margin-bottom: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1.25rem; /* 20/16 */
+        margin-bottom: 2rem;
+    }
+}
+.entry-footer {
+    text-align: right;
+
+    .read-more {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @include media-breakpoint-down(md) {
+            font-size: 0.75rem; /* 12/16 */
+        }
+    }
+}
+
+// entry image
+.entry-image {
+    width: 43%;
+    background-color: $brand-gray3;
+    margin-left: auto;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        width: 65%;
+        padding-top: 55%;
+        margin-right: 5%;
+        margin-bottom: 1rem;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 43%;
+        margin-right: 12%;
+        padding-top: 43%;
+        margin-bottom: 2rem;
+    }
+
+    .entry_alt & {
+        margin-right: auto;
+
+        @include media-breakpoint-down(md) {
+            margin-left: 5%;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-left: 12%;
+        }
+    }
+}
+

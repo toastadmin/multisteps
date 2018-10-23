@@ -1,0 +1,43 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+@import "common/fonts";
+@import "common/global";
+@import "components/buttons";
+@import "components/backgrounds";
+@import "components/plugins";
+@import "components/comments";
+@import "components/forms";
+@import "components/titles";
+@import "components/wp-classes";
+@import "components/preloader";
+@import "components/topbar";
+@import "components/navbar";
+@import "components/transitions";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/sections";
+@import "layouts/section-hero";
+@import "layouts/section-intro";
+@import "layouts/section-processes";
+@import "layouts/section-recent-posts";
+@import "layouts/section-testimonials";
+@import "layouts/section-product-categories";
+@import "layouts/section-get-in-touch";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/page-blog";
+@import "layouts/page-faqs";
+@import "layouts/page-location";
+@import "layouts/page-about-us";
+@import "layouts/page-our-team";
+@import "layouts/posts";
+@import "layouts/posts-products";
+@import "layouts/taxonomy-product-category";
+@import "layouts/tinymce";

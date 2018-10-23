@@ -1,0 +1,182 @@
+/**
+ * Forms
+ *
+ */
+
+// form control
+.form-control {
+    height: calc(2.5rem + 2px);
+    padding: .438rem .75rem;
+
+    .getintouch & {
+        height: calc(3.5rem + 2px);
+        padding: .75rem 1.5rem;
+        border: 0;
+
+        &::placeholder {
+            color: #9b9b9b;
+        }
+    }
+}
+
+
+// enquire form & application form
+.enquire-form,
+.application-form {
+
+    .form-control,
+    .custom-select {
+        font-size: 0.875rem; /* 14/16 */
+        padding: 1rem;
+        border-color: $brand-dark;
+        border-width: 2px;
+
+        @include media-breakpoint-down(md) {
+            height: calc(3rem + 2px);
+            margin-bottom: 1.75rem;
+        }
+        @include media-breakpoint-up(lg) {
+            height: calc(4rem + 2px);
+            margin-bottom: 2.5rem;
+        }
+    }
+    textarea.form-control {
+        height: auto;
+    }
+    .custom-control {
+        padding-left: 2.5rem;
+    }
+    .custom-control-label {
+        &:before {
+            background-color: transparent;
+            border: 2px solid $brand-dark;
+        }
+        &:after, &:before {
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 0;
+            left: -2.5rem;
+        }
+    }
+    .custom-file,
+    .custom-file-input {
+        width: auto;
+    }
+    .custom-file-input {
+        position: absolute;
+    }
+    .custom-file-label {
+        position: relative;
+        border: 0;
+        padding-left: 40px;
+
+        &:after {
+            display: none;
+        }
+        &:before {
+            content: "";
+            width: 31px;
+            height: 37px;
+            display: block;
+            position: absolute;
+            left: 0;
+            margin-top: -8px;
+
+            background-image: url(../images/file-plus-i.png);
+            background-size: contain;
+        }
+    }
+    .custom-select {
+        -webkit-appearance: none;
+        background-image: url(../images/custom-select-i.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+}
+
+// Search form
+.search-form {
+    @extend .form-inline;
+
+    .navbar__search-form &,
+    .topbar__search-form & {
+        position: relative;
+    }
+    .navbar__search-form & {
+        padding: 2rem 0;
+    }
+
+    label {
+        font-weight: normal;
+        @extend .form-group;
+        margin-bottom: 1rem;
+
+        .navbar__search-form & {
+            width: 100%;
+        }
+    }
+    .search-field {
+        @extend .form-control;
+        min-width: 300px;
+
+        .navbar__search-form &,
+        .topbar__search-form & {
+            height: 30px;
+            padding-right: 32px;
+            width: 100%;
+            border: 0;
+            min-width: 0;
+        }
+    }
+    .search-submit {
+        @extend .btn;
+        @extend .btn-dark;
+        margin-bottom: 1rem;
+
+
+        .navbar__search-form &,
+        .topbar__search-form & {
+            position: absolute;
+            right: 0;
+            @extend .text-hide;
+            padding: 6px 8px;
+            height: auto;
+            min-width: 0;
+
+
+            &:before {
+                @extend .fa;
+                @extend .fa-search;
+                font-size: 18px;
+
+                color: $brand-dark;
+            }
+        }
+    }
+}
+
+
+/* search form */
+.navbar__search-form {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: $brand-dark;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+/* search form */
+.topbar__search-form {
+    position: relative;
+}

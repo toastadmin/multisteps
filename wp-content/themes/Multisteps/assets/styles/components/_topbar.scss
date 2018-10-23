@@ -1,0 +1,23 @@
+/**
+ * Topbar
+ *
+ */
+
+/* language switcher */
+.language-switcher {
+    padding-right: 6rem;
+
+    a {
+        color: $brand-white;
+        font-size: 10px;
+        padding: 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: $brand-secondary;
+        }
+    }
+}
+

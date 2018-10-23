@@ -1,0 +1,183 @@
+/**
+ * Plugins
+ *
+ */
+
+//
+// SLICK SLIDER
+//
+
+.slick-slide {
+    display: none;
+}
+.slick-initialized,
+.slick-slide:first-child {
+    display: block;
+}
+
+.slick-list,
+.slick-track,
+.slick-slide>div {
+    .hero-slider & {
+        height: 100%;
+    }
+}
+
+.slick-slider {
+    &.recent-posts,
+    &.testimonials,
+    &.post-carousel,
+    &.positions-carousel {
+        @include media-breakpoint-down(md) {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
+
+    button {
+        background: none;
+        border: 0;
+        box-shadow: none;
+        padding: 0 1rem;
+        width: 4rem;
+        cursor: pointer;
+
+        @extend .text-hide;
+
+        &:before {
+            @extend .fa;
+            font-size: 3.125rem; /* 50/16 */
+            color: #000;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:hover:before {
+            color: $brand-primary;
+        }
+    }
+
+    // slick arrows
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @extend .fa;
+        z-index: 10;
+
+        &.slick-disabled {
+            opacity: .25;
+        }
+    }
+    .slick-prev {
+        left: -1rem;
+
+        &:before {
+            @extend .fa-angle-left:before;
+        }
+    }
+    &.post-carousel .slick-prev,
+    &.positions-carousel .slick-prev {
+        @include media-breakpoint-up(lg) {
+            left: -4rem;
+        }
+    }
+    .slick-next {
+        right: -1rem;
+
+        &:before {
+            @extend .fa-angle-right:before;
+        }
+    }
+    &.post-carousel .slick-next,
+    &.positions-carousel .slick-next {
+        @include media-breakpoint-up(lg) {
+            right: -4rem;
+        }
+    }
+
+    // slick dots
+    .slick-dotted.slick-slider {
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+
+        display: block;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        text-align: center;
+    }
+    .slick-dots li {
+        position: relative;
+
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+
+        cursor: pointer;
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .slick-dots li button:hover,
+    .slick-dots li button:focus {
+        outline: none;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+        opacity: 1;
+    }
+    .slick-dots li button:before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+
+        border: 0.25rem solid $brand-primary; /* 4/16 */
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-dots li.slick-active button:before {
+        background-color: $brand-primary;
+    }
+
+}
+
+// CONTACT FORM 7
+.wpcf7-form {
+    br {
+        display: none;
+    }
+}
+

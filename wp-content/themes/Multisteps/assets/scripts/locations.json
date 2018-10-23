@@ -1,0 +1,68 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id":"0001",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [151.004164, -33.818034 ]
+            },
+            "properties": {
+                "title": "Parramatta Centre",
+                "address1": "126 Church Street ",
+                "address2":"Suite 601, Level 6",
+                "city":"Parramatta",
+                "state":"NSW",
+                "postcode":"2150",
+                "phone": "02 9633 1233",
+                "fax": "02  9687 4714",
+                "email": "parramatta@ransw.org.au",
+                "description":"Short description 1 - Parramatta",
+                "icon":"/wp-multisteps/wp-content/themes/Multisteps/assets/images/file-plus-i.png"
+            }
+        },
+        {
+            "id":"0002",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [150.690221, -33.752017]
+            },
+            "properties": {
+                "title": "Penrith Centre",
+                "address1": "606 High Street",
+                "address2":"Level 2",
+                "city":"Penrith",
+                "state":"NSW",
+                "postcode":"2750",
+                "phone": "02 4728 4800",
+                "fax": "02 4731 4577",
+                "email": "penrith@ransw.org.au",
+                "description":"Short description 2 - Penrith",
+                "icon":"/wp-multisteps/wp-content/themes/Multisteps/assets/images/multisteps-map-icon-normal.png"
+            }
+        },
+        {
+            "id":"0003",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [151.209014, -33.872578]
+            },
+            "properties": {
+                "title": "Sydney City Centre",
+                "address1": "175-181 Castlereagh Street",
+                "address2":"Level 2",
+                "city":"Sydney",
+                "state":"NSW",
+                "postcode":"2000",
+                "phone": "02 8362 2888",
+                "fax": "02 9264 0303",
+                "email": "seadmin@ransw.org.au",
+                "description":"Short description 3 - Sydney",
+                "icon":"/wp-multisteps/wp-content/themes/Multisteps/assets/images/multisteps-map-icon-normal.png"
+            }
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+/**
+ * Our Team
+ *
+ */
+
+.our-team {
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        .row {
+            margin-left: -6px;
+            margin-right: -6px;
+        }
+        .row>[class*=col-] {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+}
+.team-member__image {
+    position: relative;
+    padding-top: 90%;
+    width: 100%;
+    background-color: $brand-gray3;
+}
+.team-member__info {
+    background-color: $brand-dark;
+    padding: 1rem;
+}
+.team-member__name {
+    color: #fff;
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.875rem; /* 14/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1.625rem; /* 26/16 */
+    }
+}
+.team-member__role {
+    color: #fff;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.8125rem; /* 13/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+    }
+}
+.team-member__email {
+    display: block;
+    color: #fff;
+    word-break: break-all;
+
+    &:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.625rem; /* 10/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 0.6875rem; /* 11/16 */
+    }
+}

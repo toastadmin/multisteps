@@ -1,0 +1,70 @@
+/**
+ * Pages
+ *
+ */
+
+.page-header {
+    background-color: $brand-dark;
+    padding-top: 3.75rem; /* 60/16 */
+    padding-bottom: 3.75rem; /* 60/16 */
+}
+.page-title {
+    color: $brand-white;
+    text-align: center;
+    text-transform: uppercase;
+
+    @extend .h3;
+}
+.page-content {
+    min-height: 25rem; /* 400/16 */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+// Links page
+.link-info {
+    position: relative;
+    background-color: $brand-dark;
+    color: #fff;
+    padding: 3.5rem;
+    padding-right: 6rem;
+
+    &:after {
+        content: "";
+        width: 140px;
+        height: 6px;
+        display: block;
+        background-color: $brand-secondary;
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        left: 100%;
+        margin-left: -70px;
+    }
+}
+.link-info__title {
+    font-size: 1.5rem; /* 24/16 */
+    color: $brand-secondary;
+    margin-bottom: 2rem;
+}
+.link-info__description {
+    line-height: 2;
+}
+.link-lists {
+    list-style-type: none;
+    padding-left: 4rem;
+
+    li>a {
+        display: inline-block;
+        background-color: $brand-purple;
+        color: #fff;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 14px;
+
+        &:hover,
+        &:focus {
+            background-color: darken($brand-purple, 5%);
+        }
+    }
+}

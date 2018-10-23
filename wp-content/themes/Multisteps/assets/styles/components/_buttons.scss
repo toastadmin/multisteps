@@ -1,0 +1,26 @@
+/**
+ * Buttons
+ *
+ */
+
+.btn {
+    font-size: 0.9375rem; /* 15/16 */
+    min-width: 11.25rem; /* 180/16 */
+    height: calc(2.5rem + 2px);
+    padding: .438rem .75rem;
+    text-transform: uppercase;
+    line-height: 2;
+}
+.btn-large {
+    height: calc(3.5rem + 2px);
+    padding: .75rem 1.5rem;
+}
+.btn-rounded {
+    border-radius: 1.25rem;
+}
+.btn-wide {
+    min-width: 15.625rem; /* 250/16 */
+}
+.btn-submit {
+    border-radius: 0;
+}

@@ -1,0 +1,66 @@
+/**
+ * Variables
+ *
+ */
+
+/* icon path */
+$icon-font-path:            "../fonts/";
+
+/* theme font */
+$font-family-base: "quatro", sans-serif;
+
+
+//
+// Themes Color
+//
+$brand-primary: #154997;
+$brand-secondary: #95694C;
+$brand-dark: #292638;
+$brand-red: #D61F26;
+$brand-blue: #072B67;
+$brand-white: #FFFFFF;
+$brand-black: #000000;
+$brand-gray1: #979797;
+$brand-gray2: #6C6B6B;
+$brand-gray3: #d8d8d8;
+$brand-purple: #072B67;
+
+$theme-colors: (
+  primary: $brand-primary,
+  secondary: $brand-secondary,
+  dark: $brand-dark,
+  white: $brand-white,
+  black: $brand-black,
+  red: $brand-red,
+  blue: $brand-blue,
+  purple: $brand-purple,
+  gray1: $brand-gray1,
+  gray2: $brand-gray2,
+  gray3: $brand-gray3,
+) !default;
+
+//
+// Break Point
+//
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px
+) !default;
+
+
+/* body background */
+$body-bg: #fff;
+
+/* body text color */
+$body-color: $brand-dark;
+
+/* enable rounded */
+$enable-rounded: false;
+
+/* enable carret */
+$enable-caret: false;

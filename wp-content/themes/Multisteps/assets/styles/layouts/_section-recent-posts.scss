@@ -1,0 +1,102 @@
+/**
+ * Section - Recent Posts
+ *
+ */
+
+.recent-post {
+    position: relative;
+}
+.recent-post__img,
+.recent-post__content {
+    height: 0;
+    padding-top: 83.33%;
+    position: relative;
+}
+.recent-post__content {
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        height: auto;
+        padding-top: 0;
+    }
+
+    &:after {
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-width: 2.5rem; /* 40/16 */
+        margin-left: -1.25rem; /* 20/16 */
+        border-left-width: 1.625rem;  /* 26/16 */
+        border-right-width: 1.625rem;  /* 26/16 */
+        bottom: 100%;
+        border-bottom-color: $brand-dark;
+    }
+    &.order-md-1:after {
+        top: 100%;
+        bottom: initial;
+        border-top-color: $brand-dark;
+        border-bottom-color: transparent;
+
+        @include media-breakpoint-down(sm) {
+            top: initial;
+            bottom: 100%;
+            border-top-color: transparent;
+            border-bottom-color: $brand-dark;
+        }
+    }
+
+    .inner-wrap {
+        @include media-breakpoint-down(sm) {
+            position: relative;
+        }
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.recent-post__title {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.25rem; /* 20/16 */
+        line-height: 1.5625rem; /* 25/16 */
+        max-height: 3.125rem; /* 50/16 */
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.5625rem; /* 25/16 */
+        line-height: 1.875rem;     /* fallback */ /* 30/16 */
+        max-height: 3.75rem;      /* fallback */ /* 60/16 */
+    }
+}
+.recent-post__summary {
+    @include media-breakpoint-down(md) {
+        font-size: 0.875rem; /* 14/16 */
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+    }
+}
+.readblog-cta {
+    margin-top: -35px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}

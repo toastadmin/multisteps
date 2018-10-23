@@ -1,0 +1,113 @@
+/**
+ * Section - Intro
+ *
+ */
+
+.special-intro {
+    position: relative;
+}
+.special-intro__header {
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+        width: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 6rem;
+    }
+}
+.special-intro__inner {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow:hidden;
+    white-space:nowrap;
+
+    @include media-breakpoint-down(md) {
+        width: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 6rem;
+    }
+}
+.special-intro__title {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $brand-purple;
+
+    transform-origin:0 50%;
+    transform:rotate(-90deg) translate(-50%, 50%);
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+
+    @include media-breakpoint-down(md) {
+        font-size: 3.125rem; /* 50/16 */
+        line-height: 2.5rem;
+        padding-bottom: .5rem;
+        border-bottom: 0.25rem solid $brand-secondary; /* 4/16 */
+        height: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 4.375rem; /* 70/16 */
+        line-height: 3.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 0.5rem solid $brand-secondary; /* 8/16 */
+        height: 6rem;
+    }
+}
+.special-intro__image {
+    text-align: right;
+
+    @include media-breakpoint-down(md) {
+        width: 90%;
+        height: 0;
+        padding-top: 80%;
+
+        .special-intro.left-align & {
+            margin-left: auto;
+            margin-right: -15px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        height: 0;
+        width: 80%;
+        margin-bottom: 10rem;
+        padding-top: 56.25%;
+        margin-left: initial;
+
+        .special-intro.left-align & {
+            margin-left: auto;
+        }
+    }
+}
+
+.special-intro__copy {
+    position: relative;
+    z-index: 1;
+    max-width: 34.375rem; /* 550/16 */
+    margin-left: auto;
+    margin-right: initial;
+
+    .special-intro.left-align & {
+        margin-left: initial;
+        margin-right: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.75rem; /* 12/16 */
+        padding: 2rem;
+        max-width: 90%;
+        margin-top: -3rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        padding: 4rem;
+        margin-top: -20rem;
+        min-height: 20rem; /* 320/16 */
+    }
+}
